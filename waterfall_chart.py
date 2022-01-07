@@ -143,10 +143,10 @@ def plot(index, data, Title="", x_lab="", y_lab="",
         # Determine if we want a neg or pos offset
         if row['amount'] > 0:
             y += (pos_offset*2)
-            plt.annotate(formatting.format(row['amount']),(loop,y),ha="center", color = '#9B2226', fontsize=9)
+            plt.annotate(formatting.format(row['amount']),(loop,y),ha="center", color = 'black', fontsize=9)
         else:
             y -= (pos_offset*4)
-            plt.annotate(formatting.format(row['amount']),(loop,y),ha="center", color = '#0A9396', fontsize=9)
+            plt.annotate(formatting.format(row['amount']),(loop,y),ha="center", color = 'black', fontsize=9)
         loop+=1
 
     #Scale up the y axis so there is room for the labels
